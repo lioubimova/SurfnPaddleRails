@@ -1,0 +1,11 @@
+class ApplicationController < ActionController
+    def index
+      @posts = Post.all
+      @recent_post = Post.new
+    end
+
+    def show
+      @posts = Post.all
+      @recent_post = Post.find(params[:id])
+    end
+  end

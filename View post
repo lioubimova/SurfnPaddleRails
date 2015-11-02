@@ -1,0 +1,153 @@
+<h1>Surf & Paddle</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Surf & Paddle</title>
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+	<div class="jumbotron page-header">
+		<div class="nav">
+
+			<div class="title">
+				<img id="logo" src="images/baba-yaga-logo.png" alt="" height="25px" width="25px">
+				<span>Surf & Paddle Co. Blog</span>
+			</div>
+
+
+			<ul>
+				<li>About</li>
+				<li>Search <i class="glyphicon glyphicon-search"></i></li>
+			</ul>
+		</div>
+
+		<div class="big-text">
+			<h1>Surf & Paddle Co.</h1>
+			<p>An Ironyard Academy Project Est. Fall 2013</p>
+		</div>
+	</div>
+
+	<div class="row main">
+
+		<div class="col-md-9 left-column">
+			<h2 class="post-heading">Post Title</h2>
+
+			<div class="blog-info">
+				<img src="images/baba-yaga-work.png" alt="" height="15px" width="15px">
+				<span class="author-name">Anne Marie</span> on
+				<a href="">Monday Oct 18th 7:13pm</a>
+        <a><%= :id %><a>
+			</div>
+
+			<p class="first-paragraph">Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
+
+			<p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi. Aenean dignissim <a href="">pellentesque felis</a>.</p>
+
+			<h4 class="post-quote">Woah, that's radical!</h4>
+
+			<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</p>
+
+			<p>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+
+			<div class="actionButtons">
+				<a class="link-text">Read Comments</a>
+			</div>
+
+			<div class="actionButtons">
+				<a class="link-text">Read Later</a>
+			</div>
+
+			<div class="actionButtons last">
+				<a class="link-text">Share This Post</a>
+			</div>
+
+		</div>
+
+		<div class="col-md-3 right-column">
+
+			<div class="author-info">
+				<div class="profile-img">
+					<img src="images/baba-yaga-work.png" alt="" width="60px" height="60px">
+					<p>Anne Marie</p>
+				</div>
+
+				<ul class="links">
+					<li>Twitter</li>
+					<li>Facebook</li>
+					<li>Instagram</li>
+				</ul>
+
+			</div>
+
+			<div id="ad">
+				<img src="images/surfer.jpg" alt="" class="img2" width="200px">
+			</div>
+
+			<h4>Sidebar Section Heading</h4>
+			<p class="sidebar-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+
+		</div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<h2 class="post-heading heading-center">Most Popular Posts</h2>
+
+			<div class="posts alt-color">
+			<a href="/page1.html">
+				<img src="images/cat.jpg" alt="" class="posts-img">
+				<span class="posts-title">Another cool post</span>
+			</a>
+			</div>
+			<div class="posts">
+			<a href="/page2.html">
+				<img src="images/drinks.jpg" alt="" class="posts-img">
+				<span class="posts-title">Post title</span>
+			</a>
+			</div>
+			<div class="posts">
+			<a href="/page3.html">
+				<img src="images/sewer-man.jpg" alt="" class="posts-img">
+				<span class="posts-title">Here's another longer post title</span>
+			</a>
+			</div>
+			<div class="posts alt-color">
+			<a href="/page4.html">
+				<img src="images/novoros.jpg" alt="" class="posts-img">
+				<span class="posts-title">Oh cool a post!</span>
+			</a>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="row">
+			<div class="col-md-6 footer-left">
+				<img src="images/iron-yard-logo.svg" alt="" width="36px"><span>The Ironyard Copyright 2013, All Rights Reserved</span>
+			</div>
+			<div class="col-md-6 footer-right">
+				<ul class="footer-nav">
+					<li>Nav Item 1</li>
+					<li>Nav Item 2</li>
+					<li>Nav Item 3</li>
+					<li>Nav Item 4</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</div>
+
+</body>
+</html>
+
+<%=link_to ("View post",{:action => 'show', :controller=> 'post', :id => recent_post})%>
