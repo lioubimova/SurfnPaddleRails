@@ -1,0 +1,185 @@
+.page-header {
+	background:image-url('wave-06.jpg');
+	background-size: cover;
+}
+
+.jumbotron {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 285px;
+}
+
+.nav {
+	color: white;
+}
+
+.title {
+	float: left;
+}
+
+.nav ul {
+	list-style: none;
+	float: right;
+}
+
+.nav ul li {
+	float: left;
+	margin-right: 15px;
+	color: blue;
+}
+
+.big-text {
+	text-align: center;
+}
+
+.big-text p{
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.main {
+	margin-bottom: 40px;
+}
+
+.left-column{
+	padding-left: 90px;
+    padding-right: 140px;
+}
+
+.post-heading {
+	text-transform: uppercase;
+	font-size: 48px;
+}
+
+.post-quote {
+	text-transform: uppercase;
+	margin: 30px 15px;
+}
+
+.first-paragraph {
+	margin-top: 40px;
+}
+
+.right-column{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.sidebar-text {
+    padding-right: 35px;
+    font-size: 11px;
+}
+
+.author-info {
+	margin-bottom: 15px;
+	height: 100px;
+	margin-left: 20px;
+}
+
+.profile-img {
+	margin-left: 45px;
+}
+
+.profile-img p {
+	margin-bottom: 0px;
+}
+
+.links {
+	list-style: none;
+	padding-left: 10px;
+}
+
+.links li {
+	float: left;
+	margin-right: 7px;
+	color: gray;
+	font-size: 10px;
+}
+
+#ad {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.img2 {
+	background-color: blue;
+}
+
+.actionButtons {
+	float: left;
+	margin-right: 10px;
+}
+
+
+.link-icon {
+	display: inline-block;
+}
+
+.link-text {
+	padding: 5px;
+    background: #95B4D0;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.actionButtons.last .link-text {
+	color: white;
+	text-decoration: none;
+	background: #1862A5;
+}
+
+.posts {
+	position: relative;
+	width: 25%;
+	float: left;
+    color: white;
+    font-weight: 500;
+}
+
+.alt-color {
+	color: blue;
+}
+
+.heading-center {
+    padding-left: 296px;
+    margin-bottom: 30px;
+}
+
+.posts-img {
+	width: 100%;
+	height: 250px;
+	background-color: gray;
+}
+
+.posts-title {
+	position: absolute;
+	bottom: 5px;
+	left: 35px;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+footer {
+	height: 60px;
+
+	background: #06066B;
+	color: white;
+	font-size: 11px;
+}
+
+.footer-left {
+	padding-left: 50px;
+	margin-top: 15px;
+}
+
+.footer-right {
+	margin-top: 20px;
+	padding-left: 120px;
+}
+
+.footer-nav li {
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+}

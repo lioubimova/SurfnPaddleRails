@@ -1,0 +1,31 @@
+<h1><%=@recent_post.title%></h1>
+
+<div class="row main">
+
+  		<div class="col-md-9 left-column">
+
+
+  			<div class="blog-info">
+  				<%= image_tag "baba-yaga-work.png", :width => "30px", :height => "30px" %>
+  				<span class="author-name"><%= @recent_post.author%></span> on
+  				<a href=""><%=@recent_post.created_at%></a>
+  			</div>
+        <%= simple_format @recent_post.body%>
+
+
+
+
+
+
+        <div class="actionButtons">
+          <a class="link-text">Read Comments</a>
+        </div>
+
+        <div class="actionButtons">
+          <a class="link-text">Read Later</a>
+        </div>
+
+        <div class="actionButtons last">
+          <a class="link-text">Share This Post</a>
+        </div>
+</div>
