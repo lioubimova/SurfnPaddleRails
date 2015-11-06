@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'post#index'
-  get '/:recent_post/:id' => 'post#show'
+  get 'posts/:id' => 'post#show', :as => :post
 end

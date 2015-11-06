@@ -6,7 +6,8 @@ class PostController < ApplicationController
     end
 
     def show
-      @posts = Post.all
-      @recent_post = Post.find(params[:id])
+
+      @recent_post = Post.find(params[:id].to_i)
+      @posts = Post.all.reject{|p| p == @recent_post}
     end
   end

@@ -1,14 +1,112 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
   <title>SurfnPaddleRails</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
+  <div class="container">
+
+  	<div class="jumbotron page-header">
+
+  		<div class="nav">
+
+  			<div class="title">
+
+
+  				<%= image_tag "baba-yaga-logo.png", :width => "40px", :height => "40px" %>
+  				<span>Surf & Paddle Co. Blog</span>
+  			</div>
+
+
+  			<ul>
+  				<li>About</li>
+  				<li>Search <i class="glyphicon glyphicon-search"></i></li>
+  			</ul>
+  		</div>
+
+  		<div class="big-text">
+
+  			<h1>Surf & Paddle Co.</h1>
+  			<p>An Ironyard Academy Project Est. Fall 2013</p>
+  		</div>
+    </div>
 <%= yield %>
+
+
+      <div class="col-md-3 right-column">
+
+  			<div class="author-info">
+  				<div class="profile-img">
+  					<%= image_tag "baba-yaga-work.png", :width => "80px", :height => "80px" %>
+  					<p>Anne Marie</p>
+  				</div>
+
+  				<ul class="links">
+  					<li>Twitter</li>
+  					<li>Facebook</li>
+  					<li>Instagram</li>
+  				</ul>
+
+  			</div>
+
+  			<div id="ad">
+  				<%= image_tag "surfer.jpg", :class =>"post_img", size: "200x230" %>
+  			</div>
+
+  			<h4>Sidebar Section Heading</h4>
+  			<p class="sidebar-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+
+  		</div>
+  	</div>
+
+    <div class="row">
+  <div class="col-md-12">
+    <h2 class="post-heading heading-center">Most Popular Posts</h2>
+    <% @posts.each do |post| %>
+      <div class="posts">
+        <a href="<%= post_path(:id => post.id) %>">
+
+          <%= image_tag "drinks.jpg", :class =>"posts-img", size: "250x250" %>
+          <span class="posts-title"><%= post.title %></span>
+
+        </div>
+    <% end %>
+
+      </div>
+</div
+  	<footer>
+  		<div class="row">
+  			<div class="col-md-6 footer-left">
+  				<%= image_tag "iron-yard-logo.svg", size: "48x48" %>
+          <span>The Ironyard Copyright 2013, All Rights Reserved</span>
+  			</div>
+  			<div class="col-md-6 footer-right">
+  				<ul class="footer-nav">
+  					<li>Nav Item 1</li>
+  					<li>Nav Item 2</li>
+  					<li>Nav Item 3</li>
+  					<li>Nav Item 4</li>
+  				</ul>
+  			</div>
+  		</div>
+  	</footer>
+  </div>
+
 
 </body>
 </html>
